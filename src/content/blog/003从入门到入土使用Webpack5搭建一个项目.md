@@ -30,7 +30,7 @@ pubDate: "Oct 05 2021"
 
 新建一个项目 webpack-project，进入项目根目录，打开命令行使用`yarn init -y`创建 package.json
 
-![image-20210911195520406](https://raw.githubusercontent.com/qiuqfang/images/main/image-20210911195520406-8360d225bfde4e06b607ace368b3a75a-20220421115143764.png?token=AJQWBIAF7DRG2KGNLP6SLXDCMDKQY)
+![image-20210911195520406](https://images-ivory-pi.vercel.app/image-20210911195520406-8360d225bfde4e06b607ace368b3a75a-20220421115143764.png)
 
 安装`webpack@5.46.0`、`webpack-cli@4.7.2`、`webpack-merge@5.7.3`、`webpack-dev-server@3.11.2`、`webpack-bundle-analyze`
 
@@ -451,31 +451,31 @@ yarn run eslint --init
 
 选择你想如何使用 ESLint，一般选择第二个，语法检查与问题检查，代码风格则交给我们的 Prettier 啦
 
-![image-20210912123025476](https://raw.githubusercontent.com/qiuqfang/images/main/image-20210912123025476-27ece4983d15488e9aa754607b937ead-20220421115216415.png?token=AJQWBIERKIVG3Z2PZWHPQR3CMDKS2)
+![image-20210912123025476](https://images-ivory-pi.vercel.app/image-20210912123025476-27ece4983d15488e9aa754607b937ead-20220421115216415.png)
 
 选择你项目中使用的类型模块，在 ES6 以前肯定选择 CommonJS，但是在今天我们的选择肯定是选择 JS modules 啦
 
-![image-20210912123409474](https://raw.githubusercontent.com/qiuqfang/images/main/image-20210912123409474-494977e662e341578c43cf1d7a66cddf-20220421115229150.png?token=AJQWBIGN7NCSY5E4VXRJ543CMDKTS)
+![image-20210912123409474](https://images-ivory-pi.vercel.app/image-20210912123409474-494977e662e341578c43cf1d7a66cddf-20220421115229150.png)
 
 选择你项目使用什么框架，ESLint 会针对框架给出最优的配置，在这里我选择第三种。
 
-![image-20210912123657438](https://raw.githubusercontent.com/qiuqfang/images/main/image-20210912123657438-4f1d8f8cd02e4ee69c7f457674db50bc-20220421115240625.png?token=AJQWBIBWNLGC5ZAIXFUV7A3CMDKUK)
+![image-20210912123657438](https://images-ivory-pi.vercel.app/image-20210912123657438-4f1d8f8cd02e4ee69c7f457674db50bc-20220421115240625.png)
 
 选择是否使用 TS 编程，这里选择 No，有兴趣的同学可以试试配置 TS。
 
-![image-20210912124105574](https://raw.githubusercontent.com/qiuqfang/images/main/image-20210912124105574-b828f71e9f2d4abcbb6ef890d6c79f95-20220421115259057.png?token=AJQWBIGRFJENJRNWGBN556DCMDKVO)
+![image-20210912124105574](https://images-ivory-pi.vercel.app/image-20210912124105574-b828f71e9f2d4abcbb6ef890d6c79f95-20220421115259057.png)
 
 选择你项目中代码运行的环境，一般 Browser 和 Node 都需要选择，如果不选择 Node 在使用 module.exports 时会出现 ESLint 的未定义变量错误。
 
-![image-20210912124227413](https://raw.githubusercontent.com/qiuqfang/images/main/image-20210912124227413-09d46d6c5c7745faa1780f0bad7ce5d8-20220421115316100.png?token=AJQWBIEY73NRTP3I657BOQTCMDKWQ)
+![image-20210912124227413](https://images-ivory-pi.vercel.app/image-20210912124227413-09d46d6c5c7745faa1780f0bad7ce5d8-20220421115316100.png)
 
 选择配置文件的类型一般选择 js 文件类型。
 
-![image-20210912124528242](https://raw.githubusercontent.com/qiuqfang/images/main/image-20210912124528242-17a4b95d477d42a2ba7ac29f5e6424f4-20220421115330973.png?token=AJQWBIGWBX65B45KKWGUGD3CMDKXO)
+![image-20210912124528242](https://images-ivory-pi.vercel.app/image-20210912124528242-17a4b95d477d42a2ba7ac29f5e6424f4-20220421115330973.png)
 
 这样我们就通过 ESLint，生成了我们的配置文件啦，这里附上配置文件截图：
 
-![image-20210912124910032](https://raw.githubusercontent.com/qiuqfang/images/main/image-20210912124910032-f166dfb3e2624cc5aa870b8fe7b56ddd-20220421115342003.png?token=AJQWBIAALVBC2BBWNAHTK5TCMDKYE)
+![image-20210912124910032](https://images-ivory-pi.vercel.app/image-20210912124910032-f166dfb3e2624cc5aa870b8fe7b56ddd-20220421115342003.png)
 
 我们可以看到 extends 中有一个 plugin:prettier/recommended 的选项，它是什么意思呢，它是在安装了`eslint-config-prettier`与`eslint-plugin-prettier`后的配置 ESLint+Prettier 共同协作的简便写法，具体可以在[这里](https://github.com/prettier/eslint-plugin-prettier#recommended-configuration)查看。
 
@@ -483,7 +483,7 @@ yarn run eslint --init
 
 当然我们也可以对`prettier`进行配置，我们在项目根目录中新建.prettierrc.js 配置文件，在这里就不过多说明啦，这里附上我常用的配置：
 
-![image-20210912130716209](https://raw.githubusercontent.com/qiuqfang/images/main/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20211222120218-141df85dd0de4e0eab7d393e0cbb8986-20220421115350111.png?token=AJQWBIGQ6WUB3S6FXUOFDG3CMDKYU)
+![image-20211222120218](https://images-ivory-pi.vercel.app/image-20211222120218-141df85dd0de4e0eab7d393e0cbb8986-20220421115350111.png)
 
 详细说明可以到[这里](*https://prettier.io/docs/en/options.html*)
 
@@ -514,13 +514,13 @@ yarn add husky lint-staged -D
 
 配置 husky，我们需要在命令行中键入`yarn husky install`，执行成功后你的项目中会出现`.husky`文件夹。如下所示：
 
-![image-20210912154218143](https://raw.githubusercontent.com/qiuqfang/images/main/image-20210912154218143-6dee319cea654799aa9c935e33e217d0-20220421115406029.png?token=AJQWBIGVPQFZD4E3EU7PJF3CMDKZU)
+![image-20210912154218143](https://images-ivory-pi.vercel.app/image-20210912154218143-6dee319cea654799aa9c935e33e217d0-20220421115406029.png)
 
 ### Babel
 
 配置 Babel，新建 Babel 文件`babel.config.js`，如下图所示：
 
-![image-20210912154509569](https://raw.githubusercontent.com/qiuqfang/images/main/image-20210912154509569-07506e1931c043ec9f9e53ad421130b4-20220421115414574.png?token=AJQWBIDOJF3G3C2VDGT2L5LCMDK2G)
+![image-20210912154509569](https://images-ivory-pi.vercel.app/image-20210912154509569-07506e1931c043ec9f9e53ad421130b4-20220421115414574.png)
 
 详细的配置内容我们可以去看官方文档。
 
@@ -528,12 +528,12 @@ yarn add husky lint-staged -D
 
 配置 PostCSS，新建 PostCSS 文件`postcss.config.js`，如下图所示：
 
-![image-20210912154705422](https://raw.githubusercontent.com/qiuqfang/images/main/image-20210912154705422-ae35d01db7174aa5bf2417337667b2fc-20220421115424913.png?token=AJQWBICA37CV4S7NLA2MED3CMDK22)
+![image-20210912154705422](https://images-ivory-pi.vercel.app/image-20210912154705422-ae35d01db7174aa5bf2417337667b2fc-20220421115424913.png)
 
 详细配置插件可以看官方文档。有关与 postcss 的插件可以到[这里](https://www.postcss.parts/)查看。
 
 ## 总结
 
-![image-20210912155155275](https://raw.githubusercontent.com/qiuqfang/images/main/image-20210912155155275-bd1b72c11a00449c93939b2eb3730884-20220421115434906.png?token=AJQWBIAA43WGNIRGC7WT6UTCMDK3O)
+![image-20210912155155275](https://images-ivory-pi.vercel.app/image-20210912155155275-bd1b72c11a00449c93939b2eb3730884-20220421115434906.png)
 
 最终搭建出来一个比较完善的项目结构。在写公司项目的时候我们关注的是 src 下面的目录与文件，往往却忽视了 src 以外的文件目录，而这些往往是相当重要的，这些涉及了各种性能的调优，制定团队协作的规范，所以我觉得我们有必要去从零搭建一个项目，希望对大家有所帮助。
