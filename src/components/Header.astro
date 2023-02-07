@@ -1,0 +1,31 @@
+---
+import SwitchLanguage from "./SwitchLanguage";
+import HeaderLink from "./HeaderLink.astro";
+---
+
+<header>
+  <nav>
+    <HeaderLink href="/">Home</HeaderLink>
+    <HeaderLink href="/blog">Blog</HeaderLink>
+    <HeaderLink href="https://github.com/qiuqfang" target="_blank">
+      GitHub
+    </HeaderLink>
+    <!-- <SwitchLanguage client:visible /> -->
+  </nav>
+</header>
+
+<style scoped>
+  header {
+    margin: 0em 0 2em;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h2 {
+    margin: 0.5em 0;
+  }
+</style>
