@@ -11,7 +11,7 @@ heroImage: "/placeholder-hero.jpg"
 
 ## 语义化版本规则
 
-![image-20211222105451583](https://raw.githubusercontent.com/qiuqfang/images/main/image-20211222105451583-eda73f8cca0041fa99827cd7f362e3d4-20220421114854545.png?token=AJQWBIGTCPEDFM76KDDAXRTCMDKGG)
+![image-20211222105451583](https://images-ivory-pi.vercel.app/image-20211222105451583-eda73f8cca0041fa99827cd7f362e3d4-20220421114854545.png)
 
 在介绍之前先让我们了解一下什么是语义化版本吧，语义化版本可以让我们避免项目中出现'依赖地狱'的问题，这里我截取了规范的开头，想详细了解的可以去[这里](https://semver.org/lang/zh-CN/)阅读语义化版本的详细规范。
 
