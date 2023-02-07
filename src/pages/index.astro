@@ -9,26 +9,31 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 <html lang="en">
   <head>
     <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-  </head>
-  <body>
-    <Header title={SITE_TITLE} />
-    <main>
-      <h1>🤝 Hi, Nice to meet you!</h1>
-      <span>My name is {SITE_TITLE}</span>
-      <p>I'm a software developer currently based in <span>Shenzhen, China</span>.</p>
-      <p>
-        I am good at web development through <span>HTML</span>, <span>CSS</span
-        >, <span>Javascript</span>, and I can also develop <span>apps</span> and
-        <span>desktop</span>
-        applications.
-      </p>
-    </main>
-    <Footer />
     <style>
       main span {
         font-weight: bold;
         font-style: italic;
       }
     </style>
+  </head>
+  <body>
+    <Header title={SITE_TITLE} />
+    <main>
+      <h1>🤝 Hi, Nice to meet you!</h1>
+      <span>My name is {SITE_TITLE}</span>
+      <p>
+        I'm a software developer currently based in
+        <span>Shenzhen, China</span>.
+      </p>
+      <p>
+        I am good at web development through
+        <span>HTML</span>,
+        <span>CSS</span>,
+        <span>Javascript</span>, and I can also develop
+        <span>apps</span> and <span>desktop</span>
+        applications.
+      </p>
+    </main>
+    <Footer />
   </body>
 </html>

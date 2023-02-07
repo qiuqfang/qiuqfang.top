@@ -1,6 +1,6 @@
 ---
-import SwitchLanguage from "./SwitchLanguage";
 import HeaderLink from "./HeaderLink.astro";
+import { Icon } from "astro-icon";
 ---
 
 <header>
@@ -8,13 +8,18 @@ import HeaderLink from "./HeaderLink.astro";
     <HeaderLink href="/">Home</HeaderLink>
     <HeaderLink href="/blog">Blog</HeaderLink>
     <HeaderLink href="https://github.com/qiuqfang" target="_blank">
-      GitHub
+      <Icon name="mdi:github" size={24} />
     </HeaderLink>
-    <!-- <SwitchLanguage client:visible /> -->
+    <HeaderLink href="https://twitter.com/qiuqfang" target="_blank">
+      <Icon name="mdi:twitter" size={24} />
+    </HeaderLink>
+    <HeaderLink href="https://www.qiuqfang.top/rss.xml" target="_blank">
+      <Icon name="mdi:rss" size={24} />
+    </HeaderLink>
   </nav>
 </header>
 
-<style scoped>
+<style>
   header {
     margin: 0em 0 2em;
   }
