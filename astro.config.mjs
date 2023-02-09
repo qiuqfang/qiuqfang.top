@@ -1,8 +1,9 @@
 import { defineConfig } from "astro/config";
 import sitemap from "@astrojs/sitemap";
 
-// https://astro.build/config
+import react from "@astrojs/react";
+
 export default defineConfig({
   site: "https://www.qiuqfang.top",
-  integrations: [sitemap()],
+  integrations: [sitemap(), react()]
 });
