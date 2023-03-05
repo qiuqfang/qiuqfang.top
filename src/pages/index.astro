@@ -10,13 +10,17 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
   <head>
     <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
     <style>
+      html,
+      body {
+        height: 100%;
+      }
       main span {
         font-weight: bold;
         font-style: italic;
       }
     </style>
   </head>
-  <body>
+  <body id="app">
     <Header title={SITE_TITLE} />
     <main>
       <h1>🤝 Hi, Nice to meet you!</h1>
