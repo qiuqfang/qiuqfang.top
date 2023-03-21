@@ -5,5 +5,5 @@ import react from "@astrojs/react";
 
 export default defineConfig({
   site: "https://www.qiuqfang.top",
-  integrations: [sitemap(), react()]
+  integrations: [sitemap(), react()],
 });
