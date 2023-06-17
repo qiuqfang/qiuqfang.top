@@ -1,3 +1,7 @@
+/* @tailwind base; */
+@tailwind components;
+@tailwind utilities;
+
 * {
   box-sizing: border-box;
 }
@@ -10,17 +14,16 @@ body {
   margin: auto;
   padding: 20px;
   text-align: left;
-  background-color: #fff;
   word-wrap: break-word;
   overflow-wrap: break-word;
   line-height: 1.5;
-  color: #444;
 }
 header {
   display: flex;
   justify-content: right;
   align-items: center;
 }
+
 main {
   max-width: 65ch;
   margin: auto;
@@ -38,13 +41,25 @@ h5,
 h6,
 strong,
 b {
-  color: #222;
 }
 a {
-  color: #3273dc;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: inherit;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: all 0.4s;
 }
-nav a {
-  margin-right: 10px;
+a:hover {
+  opacity: 1;
+}
+a.active {
+  opacity: 1;
+}
+p {
+  opacity: 0.8;
 }
 textarea {
   width: 100%;
@@ -65,7 +80,6 @@ img {
 }
 code {
   padding: 2px 5px;
-  background-color: #f2f2f2;
 }
 pre {
   padding: 1rem;
@@ -75,7 +89,6 @@ pre > code {
 }
 blockquote {
   border: 1px solid #999;
-  color: #222;
   padding: 2px 0px 2px 20px;
   margin: 0px;
   font-style: italic;

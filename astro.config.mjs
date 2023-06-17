@@ -1,9 +1,14 @@
 import { defineConfig } from "astro/config";
 import sitemap from "@astrojs/sitemap";
+import tailwind from "@astrojs/tailwind";
 
-import react from "@astrojs/react";
-
+// https://astro.build/config
 export default defineConfig({
   site: "https://www.qiuqfang.top",
-  integrations: [sitemap(), react()],
+  integrations: [
+    sitemap(),
+    tailwind({
+      config: { path: "./tailwind.config.cjs", applyBaseStyles: false },
+    }),
+  ],
 });

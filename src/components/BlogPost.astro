@@ -1,18 +1,19 @@
 ---
 import type { CollectionEntry } from "astro:content";
-import BaseHead from "../components/BaseHead.astro";
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
+import BaseHead from "./BaseHead.astro";
+import Header from "./Header.astro";
+import Footer from "./Footer.astro";
 
 type Props = CollectionEntry<"blog">["data"];
 
-const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
+const { title, description, pubDate, heroImage } = Astro.props;
 ---
 
 <html lang="en">
   <head>
     <BaseHead title={title} description={description} />
     <style>
+      
       .title {
         font-size: 2em;
         margin: 0.25em 0 1rem;
@@ -23,18 +24,12 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
         align-items: center;
       }
       .create_time {
-      }
-      .update_time {
-        color: red;
-      }
-      hr {
-        border-top: 1px solid #ddd;
-        margin: 1rem 0;
+        opacity: 0.4;
       }
     </style>
   </head>
 
-  <body>
+  <body class="dark:bg-black dark:text-gray-200 text-gray-700 bg-white">
     <Header />
     <main>
       <article>
@@ -55,23 +50,8 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
               </span>
             )
           }
-          {
-            updatedDate && (
-              <span class="update_time">
-                Last updated on
-                <time>
-                  {updatedDate.toLocaleDateString("zh-CN", {
-                    year: "numeric",
-                    month: "short",
-                    day: "numeric",
-                  })}
-                </time>
-              </span>
-            )
-          }
         </div>
 
-        <hr />
         <slot />
       </article>
     </main>

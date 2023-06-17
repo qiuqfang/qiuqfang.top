@@ -15,15 +15,14 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
         height: 100%;
       }
       main span {
-        font-weight: bold;
-        font-style: italic;
+        font-weight: 600;
       }
     </style>
   </head>
-  <body id="app">
+  <body id="app" class="dark:bg-stone-950 dark:text-gray-200 text-gray-700 bg-white">
     <Header title={SITE_TITLE} />
     <main>
-      <h1>🤝 Hi, Nice to meet you!</h1>
+      <h1>Hi, Nice to meet you!</h1>
       <span>My name is {SITE_TITLE}</span>
       <p>
         I'm a software developer currently based in
@@ -34,7 +33,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
         <span>HTML</span>,
         <span>CSS</span>,
         <span>Javascript</span>, and I can also develop
-        <span>apps</span> and <span>desktop</span>
+        <span>Apps</span> and <span>Desktop</span>
         applications.
       </p>
     </main>
