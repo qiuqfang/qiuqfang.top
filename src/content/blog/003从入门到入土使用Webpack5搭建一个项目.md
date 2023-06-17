@@ -34,8 +34,10 @@ pubDate: "Oct 05 2021"
 
 安装`webpack@5.46.0`、`webpack-cli@4.7.2`、`webpack-merge@5.7.3`、`webpack-dev-server@3.11.2`、`webpack-bundle-analyze`
 
-```shell
-yarn add -D webpack@5.46.0 webpack-cli@4.7.2 webpack-merge@5.7.3 webpack-dev-server@3.11.2 compression-webpack-plugin
+```bash
+yarn add -D webpack@5.46.0 webpack-cli@4.7.2 \
+  webpack-merge@5.7.3 webpack-dev-server@3.11.2 \
+  compression-webpack-plugin
 ```
 
 ### 开发环境配置
@@ -98,7 +100,8 @@ module.exports = merge(common, {
 通过 terser-webpack-plugin 插件来压缩 JS 文件
 
 ```js
-const TerserWebpackPlugin = require("terser-webpack-plugin"); // 优化压缩js文件 webpack5内置
+// 优化压缩js文件 webpack5内置
+const TerserWebpackPlugin = require("terser-webpack-plugin");
 module.exports = merge(common, {
   optimization: {
     minimizer: [new TerserWebpackPlugin()],
@@ -205,7 +208,8 @@ module.exports = merge(common, {
 通过 compression-webpack-plugin 插件开启 gzip 压缩
 
 ```js
-const CompressionWebpackPlugin = require("compression-webpack-plugin"); // gzip压缩
+// gzip压缩
+const CompressionWebpackPlugin = require("compression-webpack-plugin");
 module.exports = merge(common, {
   plugins: [
     /* 开启gzip压缩 */

@@ -23,6 +23,12 @@ const posts = (await getCollection("blog")).sort(
         display: flex;
         margin: 10px 0;
       }
+      ul li a {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+      }
       ul li time {
         flex: 0 0 130px;
         margin-right: 20px;
