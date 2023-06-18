@@ -27,3 +27,42 @@ const { title, description } = Astro.props;
 <title>{title}</title>
 <meta name="title" content={title} />
 <meta name="description" content={description} />
+
+<script>
+  const htmlEl = document.documentElement;
+
+  const iconToggle = document.querySelector(".icon-toggle") as HTMLElement;
+  const sunIconEl = iconToggle.children[0] as HTMLElement;
+  const nightIconEl = iconToggle.children[1] as HTMLElement;
+
+  const handleToggle = () => {
+    htmlEl.classList.toggle("dark");
+    if (htmlEl.classList.value.includes("dark")) {
+      localStorage.theme = "dark";
+      sunIconEl.style.display = "inline-block";
+      nightIconEl.style.display = "none";
+    } else {
+      localStorage.theme = "light";
+      sunIconEl.style.display = "none";
+      nightIconEl.style.display = "inline-block";
+    }
+  };
+
+  iconToggle.addEventListener("click", handleToggle);
+
+  if (localStorage.theme) {
+    htmlEl.classList.add(localStorage.theme);
+  } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+    htmlEl.classList.add("dark");
+    localStorage.theme = "dark";
+  }
+  if (htmlEl.classList.value.includes("dark")) {
+    localStorage.theme = "dark";
+    sunIconEl.style.display = "inline-block";
+    nightIconEl.style.display = "none";
+  } else {
+    localStorage.theme = "light";
+    sunIconEl.style.display = "none";
+    nightIconEl.style.display = "inline-block";
+  }
+</script>

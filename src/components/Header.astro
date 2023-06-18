@@ -1,6 +1,8 @@
 ---
 import HeaderLink from "./HeaderLink.astro";
 import { Icon } from "astro-icon";
+
+const theme = localStorage.theme;
 ---
 
 <header>
@@ -16,10 +18,14 @@ import { Icon } from "astro-icon";
     <HeaderLink href={`${Astro.site}/rss.xml`} target="_blank">
       <Icon name="mdi:rss" size={24} />
     </HeaderLink>
+    <HeaderLink class="icon-toggle">
+      <Icon name="mdi:white-balance-sunny" size={24} />
+      <Icon name="mdi:weather-night" size={24} />
+    </HeaderLink>
   </nav>
 </header>
 
-<style>
+<style is:inline>
   header {
     margin: 0em 0 2em;
     display: flex;
@@ -38,9 +44,5 @@ import { Icon } from "astro-icon";
     display: flex;
     justify-content: flex-start;
     align-items: center;
-  }
-
-  h2 {
-    margin: 0.5em 0;
   }
 </style>
