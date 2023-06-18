@@ -14,7 +14,7 @@ const posts = (await getCollection("blog")).sort(
 <html lang="en">
   <head>
     <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-    <style>
+    <style is:inline>
       ul {
         list-style-type: none;
         padding: unset;
@@ -42,7 +42,7 @@ const posts = (await getCollection("blog")).sort(
   <body class="dark:bg-black dark:text-gray-200 text-gray-700 bg-white">
     <Header />
     <main>
-      <h1>Blog</h1>
+      <h1 class="dark:text-gray-50 text-gray-950">Blog</h1>
       <section>
         <ul>
           {

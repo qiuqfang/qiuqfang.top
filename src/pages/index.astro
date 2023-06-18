@@ -9,31 +9,39 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 <html lang="en">
   <head>
     <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-    <style>
-      html,
-      body {
-        height: 100%;
-      }
+    <style is:inline>
       main span {
         font-weight: 600;
+        opacity: 0.4;
       }
     </style>
   </head>
-  <body id="app" class="dark:bg-stone-950 dark:text-gray-200 text-gray-700 bg-white">
+  <body
+    id="app"
+    class="dark:bg-black dark:text-gray-200 text-gray-700 bg-white"
+  >
     <Header title={SITE_TITLE} />
     <main>
-      <h1>Hi, Nice to meet you!</h1>
-      <span>My name is {SITE_TITLE}</span>
+      <h1 class="dark:text-gray-50 text-gray-950">Hi, Nice to meet you!</h1>
+      <p>
+        My name is
+        <span class="dark:text-gray-50 text-gray-950">
+          {SITE_TITLE}
+        </span>
+      </p>
       <p>
         I'm a software developer currently based in
-        <span>Shenzhen, China</span>.
+        <span class="dark:text-gray-50 text-gray-950">Shenzhen, China</span>.
       </p>
       <p>
         I am good at web development through
-        <span>HTML</span>,
-        <span>CSS</span>,
-        <span>Javascript</span>, and I can also develop
-        <span>Apps</span> and <span>Desktop</span>
+        <span class="dark:text-gray-50 text-gray-950">HTML</span>,
+        <span class="dark:text-gray-50 text-gray-950">CSS</span>,
+        <span class="dark:text-gray-50 text-gray-950">Javascript</span>, and I can also
+        develop
+        <span class="dark:text-gray-50 text-gray-950">Apps</span>
+        and
+        <span class="dark:text-gray-50 text-gray-950">Desktop</span>
         applications.
       </p>
     </main>
