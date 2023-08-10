@@ -13,25 +13,25 @@
     "prettier": "prettier --write ."
   },
   "dependencies": {
-    "@astrojs/react": "^2.0.2",
-    "@astrojs/rss": "^2.3.0",
-    "@astrojs/sitemap": "^2.0.0",
+    "@astrojs/react": "^2.2.1",
+    "@astrojs/rss": "^2.4.4",
+    "@astrojs/sitemap": "^2.0.1",
     "@astrojs/tailwind": "^4.0.0",
-    "@types/react": "^18.0.21",
-    "@types/react-dom": "^18.0.6",
-    "astro": "^2.6.4",
-    "astro-icon": "^0.8.0",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0",
-    "styled-components": "^6.0.0",
-    "tailwindcss": "^3.3.2"
+    "@types/react": "^18.2.20",
+    "@types/react-dom": "^18.2.7",
+    "astro": "^2.10.5",
+    "astro-icon": "^0.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "styled-components": "^6.0.7",
+    "tailwindcss": "^3.3.3"
   },
   "devDependencies": {
     "@types/styled-components": "^5.1.26",
-    "@typescript-eslint/parser": "^5.55.0",
-    "eslint": "^8.36.0",
-    "eslint-plugin-astro": "^0.27.0",
-    "prettier": "^2.8.4",
+    "@typescript-eslint/parser": "^5.62.0",
+    "eslint": "^8.46.0",
+    "eslint-plugin-astro": "^0.27.2",
+    "prettier": "^2.8.8",
     "prettier-plugin-astro": "^0.10.0"
   }
 }
