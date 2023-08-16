@@ -1,7 +1,7 @@
 ---
 title: "从入门到入土使用Webpack5搭建一个项目"
 description: "手把手教你如何从零搭建一个Webpack项目"
-pubDate: "Oct 05 2021"
+pubDate: "2021.10.05"
 ---
 
 ## 引言
