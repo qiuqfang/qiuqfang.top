@@ -1,7 +1,8 @@
 * {
   box-sizing: border-box;
 }
-html, body {
+html,
+body {
   height: 100%;
 }
 body {
@@ -99,4 +100,25 @@ blockquote {
 
 ::-webkit-scrollbar-corner {
   background: transparent;
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+
+::view-transition-old(root) {
+  z-index: 999;
+}
+::view-transition-new(root) {
+  z-index: 1;
+}
+
+/* 进入dark模式和退出dark模式时，两个图像的位置顺序正好相反 */
+html.dark ::view-transition-old(root) {
+  z-index: 1;
+}
+html.dark::view-transition-new(root) {
+  z-index: 999;
 }
