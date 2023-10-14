@@ -1,12 +1,14 @@
 ---
-import type { CollectionEntry } from "astro:content";
+import { type CollectionEntry } from "astro:content";
 import BaseHead from "./BaseHead.astro";
 import Header from "./Header.astro";
 import Footer from "./Footer.astro";
 
-type Props = CollectionEntry<"blog">["data"];
+type Props = CollectionEntry<"blog">;
 
-const { title, description, pubDate, heroImage } = Astro.props;
+const post = Astro.props;
+const { title, description, pubDate, heroImage } = post.data;
+const { headings } = await post.render();
 ---
 
 <html lang="en">
@@ -34,8 +36,8 @@ const { title, description, pubDate, heroImage } = Astro.props;
 
   <body class="dark:bg-black dark:text-gray-200 text-gray-700 bg-white">
     <Header />
-    <main>
-      <article>
+    <main class=" max-w-none flex justify-center">
+      <article class=" max-w-[65ch]">
         {heroImage && <img width={720} height={360} src={heroImage} alt="" />}
         <h1 class="title dark:text-gray-50 text-gray-950">{title}</h1>
         <div class="time">
@@ -56,6 +58,9 @@ const { title, description, pubDate, heroImage } = Astro.props;
         </div>
         <slot />
       </article>
+      <div class=" fixed top-48 lg:ml-[85%] xl:ml-[65%] hidden lg:block">
+        {headings.map(headeing => (<div class="text-sm" style={`margin-left: ${(headeing.depth - 2) * 0.875}rem`}><a href={`#${headeing.slug}`}>{headeing.text}</a></div>))}
+      </div>
     </main>
     <Footer />
   </body>

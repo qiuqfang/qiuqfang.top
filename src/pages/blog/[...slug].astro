@@ -12,12 +12,9 @@ export async function getStaticPaths() {
 type Props = CollectionEntry<"blog">;
 
 const post = Astro.props;
-const { Content, headings } = await post.render();
+const { Content } = await post.render();
 ---
 
-<BlogPost {...post.data}>
-  <div class=" fixed left-20">
-    {headings.map(headeing => (<div class="w-[150px] text-sm text-ellipsis whitespace-nowrap overflow-hidden" style={`margin-left: ${(headeing.depth - 2) * 0.875}rem`}><a href={`#${headeing.slug}`}>{headeing.text}</a></div>))}
-  </div>
+<BlogPost {...post}>
   <Content />
 </BlogPost>
