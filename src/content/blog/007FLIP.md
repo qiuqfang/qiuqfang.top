@@ -1,4 +1,9 @@
-# 理解 FLIP 动画技术：探索其优势和缺点
+---
+title: "理解 FLIP 动画技术：探索其优势和缺点"
+description: "理解 FLIP 动画技术：探索其优势和缺点"
+pubDate: "2023.12.11"
+---
+
 [Animating Layouts with the FLIP Technique](https://css-tricks.com/animating-layouts-with-the-flip-technique/)
 
 在网络上，动画已经成为创造引人入胜和互动式用户体验的重要组成部分。一种技术引起了人们的关注，它能够创建流畅且性能良好的动画，那就是 FLIP（First, Last, Invert, Play）动画技术。在本文中，我们将深入探讨 FLIP 动画，探索其在 Web 开发中的优势和缺点。
